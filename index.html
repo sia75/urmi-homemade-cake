@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff4f8" />
+  <meta name="description" content="Urmi Homemade Cake — ভালোবাসা ও যত্নে তৈরি ঘরোয়া কেক। জন্মদিন, বিয়ে ও সকল বিশেষ আয়োজনের জন্য কাস্টম কেক অর্ডার করুন।" />
+  <title>Urmi Homemade Cake | Made with Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">🎂 আপনার বিশেষ দিনকে আরও মিষ্টি করে তুলতে — আজই অর্ডার করুন</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Urmi Homemade Cake home">
+      <span class="brand-mark">♡</span>
+      <span><strong>Urmi</strong><small>HOMEMADE CAKE</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="মেনু খুলুন">☰</button>
+    <nav id="navMenu">
+      <a href="#home">হোম</a><a href="#cakes">আমাদের কেক</a><a href="#custom">কাস্টম কেক</a><a href="#gallery">গ্যালারি</a><a href="#contact">যোগাযোগ</a>
+    </nav>
+    <a class="header-order" href="#cakes">অর্ডার করুন <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> HOMEMADE WITH LOVE</span>
+        <h1>প্রতিটি উদযাপনে<br><em>একটু মিষ্টি</em> ভালোবাসা</h1>
+        <p>ভালোবাসা ও যত্নে তৈরি ঘরোয়া কেক। আপনার পছন্দ, আয়োজন ও বিশেষ মুহূর্তের জন্য থাকছে সুন্দর সব কাস্টমাইজড কেক।</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#cakes">কেক দেখুন <span>→</span></a>
+          <a class="btn btn-light" href="#custom">কাস্টম অর্ডার</a>
+        </div>
+        <div class="hero-note"><span class="stars">★★★★★</span><span>আপনার আনন্দের মুহূর্তে পাশে আছি</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image-wrap">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1100&q=85" alt="সুন্দর গোলাপি জন্মদিনের কেক" />
+        </div>
+        <div class="floating-card"><span>♡</span><div><b>Made with love</b><small>প্রতিটি কেকেই যত্নের ছোঁয়া</small></div></div>
+        <div class="hero-stamp">SWEET<br>MEMORIES</div>
+      </div>
+      <div class="hero-decoration decor-one">✿</div><div class="hero-decoration decor-two">♡</div>
+    </section>
+
+    <section class="benefits">
+      <div><span>♡</span><p><b>ঘরোয়া যত্ন</b><small>ভালোবাসায় তৈরি</small></p></div>
+      <div><span>✧</span><p><b>কাস্টম ডিজাইন</b><small>আপনার পছন্দমতো</small></p></div>
+      <div><span>🎂</span><p><b>বিশেষ আয়োজন</b><small>প্রতিটি আনন্দে</small></p></div>
+      <div><span>✿</span><p><b>ফ্রেশ কেক</b><small>অর্ডার অনুযায়ী প্রস্তুত</small></p></div>
+    </section>
+
+    <section class="section cakes-section" id="cakes">
+      <div class="section-heading">
+        <span class="eyebrow">OUR CAKE COLLECTION</span>
+        <h2>পছন্দের কেকটি <em>বেছে নিন</em></h2>
+        <p>জন্মদিন থেকে শুরু করে জীবনের প্রতিটি বিশেষ মুহূর্তের জন্য।</p>
+      </div>
+      <div class="filter-row" id="filters">
+        <button class="filter active" data-filter="all">সব কেক</button>
+        <button class="filter" data-filter="birthday">জন্মদিন</button>
+        <button class="filter" data-filter="chocolate">চকলেট</button>
+        <button class="filter" data-filter="custom">কাস্টম ডিজাইন</button>
+      </div>
+      <div class="cake-grid" id="cakeGrid">
+        <article class="cake-card" data-category="birthday">
+          <div class="cake-photo"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="পিঙ্ক ক্রিম কেক"><span class="photo-tag">POPULAR</span></div>
+          <div class="cake-info"><div><h3>Pink Celebration Cake</h3><p>সফট ক্রিম ও এলিগ্যান্ট ডিজাইন</p></div><strong>৳ ১,২০০ থেকে</strong></div>
+          <button class="order-card" data-product="Pink Celebration Cake">এই কেকটি অর্ডার করুন <span>↗</span></button>
+        </article>
+        <article class="cake-card" data-category="chocolate">
+          <div class="cake-photo"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80" alt="চকলেট কেক"></div>
+          <div class="cake-info"><div><h3>Chocolate Delight</h3><p>চকলেট ভালোবাসেন যারা</p></div><strong>৳ ১,০০০ থেকে</strong></div>
+          <button class="order-card" data-product="Chocolate Delight">এই কেকটি অর্ডার করুন <span>↗</span></button>
+        </article>
+        <article class="cake-card" data-category="birthday">
+          <div class="cake-photo"><img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?auto=format&fit=crop&w=700&q=80" alt="স্ট্রবেরি কেক"></div>
+          <div class="cake-info"><div><h3>Strawberry Dream</h3><p>ফ্রুটি ও ফ্রেশ লুক</p></div><strong>৳ ১,১০০ থেকে</strong></div>
+          <button class="order-card" data-product="Strawberry Dream">এই কেকটি অর্ডার করুন <span>↗</span></button>
+        </article>
+        <article class="cake-card" data-category="custom">
+          <div class="cake-photo"><img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=700&q=80" alt="কাস্টম ডিজাইন কেক"></div>
+          <div class="cake-info"><div><h3>Custom Theme Cake</h3><p>আপনার আইডিয়া, আমাদের ডিজাইন</p></div><strong>দাম আলোচনা সাপেক্ষে</strong></div>
+          <button class="order-card" data-product="Custom Theme Cake">এই কেকটি অর্ডার করুন <span>↗</span></button>
+        </article>
+        <article class="cake-card" data-category="chocolate">
+          <div class="cake-photo"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="চকলেট গ্যানাশ কেক"></div>
+          <div class="cake-info"><div><h3>Chocolate Ganache</h3><p>রিচ চকলেট ফিনিশিং</p></div><strong>৳ ১,৩০০ থেকে</strong></div>
+          <button class="order-card" data-product="Chocolate Ganache">এই কেকটি অর্ডার করুন <span>↗</span></button>
+        </article>
+        <article class="cake-card" data-category="custom">
+          <div class="cake-photo"><img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=700&q=80" alt="বিশেষ দিনের কেক"></div>
+          <div class="cake-info"><div><h3>Special Day Cake</h3><p>বিয়ে, এনিভার্সারি ও অন্যান্য আয়োজন</p></div><strong>দাম আলোচনা সাপেক্ষে</strong></div>
+          <button class="order-card" data-product="Special Day Cake">এই কেকটি অর্ডার করুন <span>↗</span></button>
+        </article>
+      </div>
+      <p class="price-note">* প্রদর্শিত মূল্য নমুনা হিসেবে দেওয়া হয়েছে। কেকের সাইজ, ফ্লেভার ও ডিজাইন অনুযায়ী চূড়ান্ত মূল্য নিশ্চিত করা হবে।</p>
+    </section>
+
+    <section class="custom-banner" id="custom">
+      <div class="custom-image"><img src="https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&w=900&q=85" alt="কাস্টম কেক সাজানো হচ্ছে"></div>
+      <div class="custom-copy"><span class="eyebrow">YOUR IDEA, OUR CREATION</span><h2>আপনার কল্পনার কেক,<br><em>আমাদের হাতে</em></h2><p>নাম, বয়স, পছন্দের রং, থিম কিংবা ছবির মতো ডিজাইন—আপনার আইডিয়া আমাদের জানান। আমরা আপনার আয়োজনের জন্য কেক তৈরি করতে সাহায্য করব।</p><a class="btn btn-primary" href="#" id="customWhatsApp">কাস্টম কেক অর্ডার করুন <span>↗</span></a></div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading"><span class="eyebrow">A LITTLE CAKE INSPIRATION</span><h2>আমাদের <em>কেক গ্যালারি</em></h2><p>আপনার পরবর্তী উদযাপনের জন্য কিছু অনুপ্রেরণা।</p></div>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?auto=format&fit=crop&w=700&q=80" alt="কেক গ্যালারি ১">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="কেক গ্যালারি ২">
+        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80" alt="কেক গ্যালারি ৩">
+        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=700&q=80" alt="কেক গ্যালারি ৪">
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><span class="eyebrow">LET'S MAKE IT SPECIAL</span><h2>আপনার আনন্দের আয়োজন<br><em>শুরু হোক এখান থেকেই</em></h2><p>কেকের ডিজাইন, সাইজ ও অর্ডার সম্পর্কে জানতে আমাদের সঙ্গে যোগাযোগ করুন।</p></div>
+      <div class="contact-actions"><a class="btn btn-primary" id="whatsappMain" href="#">WhatsApp-এ অর্ডার <span>↗</span></a><a class="btn btn-facebook" id="facebookMain" href="#" target="_blank" rel="noopener">Facebook Page <span>↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">♡</span><span><strong>Urmi</strong><small>HOMEMADE CAKE</small></span></a>
+    <p>ভালোবাসা ও যত্নে তৈরি ঘরোয়া কেক ❤️</p>
+    <small>© <span id="year"></span> Urmi Homemade Cake. All rights reserved.</small>
+  </footer>
+  <a class="floating-whatsapp" id="floatingWhatsApp" href="#" aria-label="WhatsApp-এ যোগাযোগ">☏</a>
+  <script src="script.js"></script>
+</body>
+</html>
